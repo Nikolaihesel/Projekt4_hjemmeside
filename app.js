@@ -7,3 +7,12 @@ window.addEventListener('scroll', function(){
     bubbles.style.top = valueY * -.5 + 'px';
      
 });
+
+function showMenu() {
+    let menu = document.getElementById('resMenu');
+    if (menu.style.display == "block") {
+        menu.style.display = "none"
+    } else {
+        menu.style.display = "block"
+    }
+};
