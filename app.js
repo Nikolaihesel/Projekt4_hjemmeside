@@ -8,11 +8,15 @@ window.addEventListener('scroll', function(){
      
 });
 
+let menu = document.getElementById('resMenu');
+
 function showMenu() {
     let menu = document.getElementById('resMenu');
     if (menu.style.display == "block") {
         menu.style.display = "none"
-    } else {
-        menu.style.display = "block"
     }
+    else {
+        menu.style.display = "block"
+    };
 };
+
