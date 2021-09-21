@@ -53,7 +53,8 @@ p {
 
 body {
     background-color: var(--clr-bg);
-
+    max-width: 1420px;
+    max-height: 100%;
 }
 
 .bubbles {
@@ -78,6 +79,7 @@ body {
     z-index: 3;
     display: none;
     overflow: hidden;
+    height: 100%;
 }
 
 .burger {
@@ -198,7 +200,7 @@ nav {
 
 .stress_handling {
     margin: 4em;
-    margin-left: 16em;
+    margin-left: 18em;
     max-width: 57ch;
     position: relative;
 }
@@ -224,10 +226,10 @@ main p {
 }
 
 main section {
-    margin-bottom: 4em;
-}
+    margin: 2em 0;
+    }
 
-main button {
+ .book_tid {
     height: 150px;
     width: 150px;
     border-radius: 50%;
@@ -337,6 +339,8 @@ main button {
         padding-bottom: 3em;
     }
 
+
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -354,6 +358,63 @@ main button {
     .burger_container {
         display: block;
     }
+}
+
+/* handle_stress.html */
+
+/* book_tid.html */
+
+.pos_arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.pos_arrow h2 {
+    margin-left: 2.5em;
+}
+
+.arrow {
+    cursor: pointer;
+    height: 2em;
+    margin-right: 2em;
+}
+
+.hide_book span {
+    font-weight: var(--fw-bold);
+}
+
+.hide_book {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 
 
+}
+
+.hide_book button {
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    border: none;
+    background: var(--clr-accentr);
+    color: var(--clr-dark);
+    font-weight: var(--fw-bold);
+    cursor: pointer;
+
+}
+
+.hide {
+    /* display: none; */
+}
+
+.line_book {
+    margin: auto;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    height: 4px;
+    background: var(--clr-dark);
 }
