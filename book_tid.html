@@ -12,6 +12,37 @@
 
 <body>
 
+    <div id="bg_blur_confirm" class="bg_blur_confirm">
+        <div id="modal_confirm" class="modal_confirm">
+            <h3 id="display_fname"></h3>
+            <h3 id="display_lname"></h3>
+            <h3 id="display_date"></h3>
+            <h3 id="display_email"></h3>
+        </div>
+    </div>
+
+    <div class="form_blur">
+        <div class="form_bg">
+
+            <form id="form" onsubmit="showInfo()">
+                <div class="input_text" id="">
+                    <input type="text" id="fname" placeholder=" Fornavn" name="fname">
+                </div>
+                <div class="input_text" id="">
+                    <input type="text" id="lname" placeholder=" Efternavn" name="lname">
+                </div>
+                <div class="input_text" id="">
+                    <input type="datetime-local" id="dateInfo" name="Ledige tider" min="2021-09-17" max="2023-12-31">
+                </div>
+
+                <div class="input_text" id="">
+                    <input type="email" id="emailInfo" placeholder=" Email" name="email">
+                </div>
+                <button class="login_submit" id="login_form_submit" type="submit"> Bekræft booking
+                </button>
+            </form>
+        </div>
+    </div>
 
     <div id="parralax">
         <img src="img/bubbles_projekt4.png" alt="" class="bubbles" id="bubbles">
@@ -113,7 +144,8 @@
 
                     <p class="info_book">Hos en psykolog vil du ved hjælp af samtaleterapi,
                         rådgivning og vejledning, få nogle strategier som hjælper dig til en lettere hverdag.
-                        <br> <span>Studie- og SPS-vejleder - Træffetider: mandag kl. 9-12, onsdag kl. 10-13</span>
+                        <br> <span>Studie- og SPS-vejleder - Træffetider: mandag kl. 9-12, onsdag kl.
+                            10-13</span>
                     </p>
                     <button id="book_tid_psykolog">
                         Book tid
