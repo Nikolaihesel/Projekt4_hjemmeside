@@ -426,8 +426,9 @@ main section {
     width: 100vw;
     top: 0;
     display: none;
-    z-index: 2;
+    z-index: 3;
     display: flex;
+    display: none;
 
 }
 
@@ -439,13 +440,12 @@ main section {
     top: 20%;
     margin: auto;
     border-radius: 10px;
-    display: none;
+    z-index: 1;
 
 }
 
 
 .form_blur {
-    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -454,6 +454,8 @@ main section {
     height: 100vh;
     width: 100vw;
     z-index: 1;
+    display: none;
+
 }
 
 .form_bg {
@@ -461,7 +463,6 @@ main section {
     display: flex;
     flex-direction: column;
     background: white;
-    z-index: 2;
     align-self: center;
     margin: auto;
     padding: 4em;
@@ -493,11 +494,6 @@ main section {
     transform: scale(1.1);
     background-color: rgb(45, 235, 45);
 }
-
-
-
-
-
 .close {
     position: relative;
     top: 45px;
