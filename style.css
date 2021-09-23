@@ -51,6 +51,10 @@ p {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: var(--clr-bg);
     max-width: 1420px;
@@ -155,7 +159,7 @@ nav {
     white-space: nowrap;
 }
 
-.nav_links li:after {
+.hover_container li:after {
     content: '';
     position: absolute;
     width: 50%;
@@ -170,7 +174,7 @@ nav {
 
 }
 
-.nav_links li:hover:after {
+.hover_container li:hover:after {
     transform: scaleX(0.7);
     transform-origin: bottom left;
 
@@ -329,37 +333,6 @@ main section {
     cursor: pointer;
 
 }
-@media screen and (max-width: 1200px) {
-    main button {
-
-        left: 20em;
-    }
-
-    .stress_handling {
-        padding-bottom: 3em;
-    }
-
-
-
-}
-
-@media screen and (max-width: 1024px) {
-
-    .paragraph {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .nav_links {
-        display: none;
-    }
-
-    .burger_container {
-        display: block;
-    }
-}
-
 /* handle_stress.html */
 
 /* book_tid.html */
@@ -520,4 +493,66 @@ main section {
     top: 45px;
     left: 570px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    main button {
+
+        left: 20em;
+    }
+
+    .stress_handling {
+        padding-bottom: 3em;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .paragraph {
+        display: none;
+    }
+
+    .hide_book {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container {
+        overflow: hidden;
+    }
+
+    .stress_handling {
+        margin: auto;
+    }
+
+    main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .book_tid {
+        left: 35%;
+
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav_links {
+        display: none;
+    }
+
+    .burger_container {
+        display: block;
+    }
+
+    .hide_book {
+        display: flex;
+        flex-direction: column;
+    }
 }
