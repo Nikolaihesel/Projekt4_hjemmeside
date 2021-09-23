@@ -9,7 +9,6 @@ window.addEventListener('scroll', function(){
      
 });
 
-let menu = document.getElementById('resMenu');
 
 function showMenu() {
     let menu = document.getElementById('resMenu');
@@ -33,17 +32,24 @@ function showInfo() {
     
     let contactInfo = [myName, myLastName, myDate, myEmail]
 
-    document.getElementById("display_fname").innerHTML = contactInfo[0];
-    document.getElementById("display_lname").innerHTML = contactInfo[1];
+    document.getElementById("display_fname").innerHTML = contactInfo[0] + ' ' + contactInfo[1];
     document.getElementById("display_date").innerHTML = contactInfo[2];
     document.getElementById("display_email").innerHTML = contactInfo[3];
-
-    
 
     modal.style.display = "block";
 }
 
-console.log(showInfo())
+function bookTid(){
+    document.getElementById('form_open').style.display ="block";
+}
+
+
+function closeModal() {
+    document.getElementById('form_open').style.display = "none"
+}
+
+
+
 
  // stop siden fra a reloade ved submit
  var form = document.getElementById("form");
@@ -54,7 +60,4 @@ console.log(showInfo())
  form.addEventListener('submit', handleForm);
 
 
- function bookTid(){
-     document.getElementById('form_open').style.display ="block";
- }
 
