@@ -46,6 +46,7 @@ function bookTid(){
 
 function closeModal() {
     document.getElementById('form_open').style.display = "none"
+    location.reload();
 }
 
 
