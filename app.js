@@ -18,7 +18,7 @@ function showMenu() {
     }
     else {
         menu.style.display = "block"
-    };
+    }
 };
 
 let modal = document.getElementById('bg_blur_confirm');
