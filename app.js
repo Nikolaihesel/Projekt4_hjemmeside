@@ -18,12 +18,13 @@ function showMenu() {
     }
     else {
         menu.style.display = "block"
-    };
+    }
 };
 
 let modal = document.getElementById('bg_blur_confirm');
 let close = document.getElementById('close');
-let contactInfo = []
+
+
 function showInfo() {
     let myName = document.getElementById("fname").value;
     document.getElementById("display_fname").innerHTML = myName;
@@ -34,6 +35,8 @@ function showInfo() {
     let myEmail = document.getElementById("emailInfo").value;
     document.getElementById("display_email").innerHTML = myEmail;
     modal.style.display = "block";
+
+    let contactInfo = [myName, myLastName, myDate, myEmail]
 }
 
  // stop siden fra a reloade ved submit
