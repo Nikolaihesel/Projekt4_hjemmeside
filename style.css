@@ -421,7 +421,7 @@ main section {
 }
 /* form */
 
-.bg_blur_confirm {
+/* .bg_blur_confirm {
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -429,12 +429,13 @@ main section {
     display: none;
     z-index: 3;
     display: flex;
-    display: none;
 
 }
 
+*/
+
 .modal_confirm {
-    position: relative;
+    position: absolute;
     background-color: white;
     height: 60%;
     width: 50%;
@@ -448,12 +449,13 @@ main section {
 
 .form_blur {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: absolute;
     background: rgba(0, 0, 0, 0.79);
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 1;
     /* display: none; */
 

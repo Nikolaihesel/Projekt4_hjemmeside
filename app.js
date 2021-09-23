@@ -27,17 +27,23 @@ let close = document.getElementById('close');
 
 function showInfo() {
     let myName = document.getElementById("fname").value;
-    document.getElementById("display_fname").innerHTML = myName;
     let myLastName = document.getElementById("lname").value;
-    document.getElementById("display_lname").innerHTML = myLastName;
     let myDate = document.getElementById("dateInfo").value;
-    document.getElementById("display_date").innerHTML = myDate;
     let myEmail = document.getElementById("emailInfo").value;
-    document.getElementById("display_email").innerHTML = myEmail;
-    modal.style.display = "block";
-
+    
     let contactInfo = [myName, myLastName, myDate, myEmail]
+
+    document.getElementById("display_fname").innerHTML = contactInfo[0];
+    document.getElementById("display_lname").innerHTML = contactInfo[1];
+    document.getElementById("display_date").innerHTML = contactInfo[2];
+    document.getElementById("display_email").innerHTML = contactInfo[3];
+
+    
+
+    modal.style.display = "block";
 }
+
+console.log(showInfo())
 
  // stop siden fra a reloade ved submit
  var form = document.getElementById("form");
@@ -47,4 +53,8 @@ function showInfo() {
 
  form.addEventListener('submit', handleForm);
 
+
+ function bookTid(){
+     document.getElementById('form_open').style.display ="block";
+ }
 
