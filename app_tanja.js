@@ -10,4 +10,15 @@ window.addEventListener("load", () => {
 
 closeBtn.addEventListener("click", () => {
   popupScreen.classList.remove("active"); //Close the popup screen on click the close button
-})
+
+  document.cookie = "WebsiteName=testWensite; max-age=" + 24 * 60 * 60;
+});
+
+const WebsiteCookie = document.cookie.indexOf("WebsiteName=");
+
+if(WebsiteCookie != -1){
+  popupScreen.style.display = "none"; //Hide the popup screen if the cookie is not expired
+}
+else{
+  popupScreen.style.display = "flex"; //Show the popup screen if the cookie is expired
+}
