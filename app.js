@@ -1,6 +1,6 @@
 let bubbles = document.getElementById('bubbles');
 
-
+let contactInfo = [];
 window.addEventListener('scroll', function(){
     var valueY = window.scrollY;
     var valueX = window.scrollX; 
@@ -30,14 +30,28 @@ function showInfo() {
     let myDate = document.getElementById("dateInfo").value;
     let myEmail = document.getElementById("emailInfo").value;
     
-    let contactInfo = [myName, myLastName, myDate, myEmail]
+    this.contactInfo = [myName, myLastName, myDate, myEmail]
+    
+    // get the ul#menu
+    const menu = document.getElementById('menu');
+    contactInfo.forEach((field)=> {
+        // add menu item
+        menu.appendChild(createMenuItem(field));
+    }
+)
 
-    document.getElementById("display_fname").innerHTML = contactInfo[0] + ' ' + contactInfo[1];
-    document.getElementById("display_date").innerHTML = contactInfo[2];
-    document.getElementById("display_email").innerHTML = contactInfo[3];
+    
 
     modal.style.display = "block";
 }
+
+function createMenuItem(field) {
+    let li = document.createElement('li');
+    li.classList.add("listItem_confirm");
+    li.textContent = field;
+    return li;
+}
+
 
 function bookTid(){
     document.getElementById('form_open').style.display ="block";
@@ -48,7 +62,6 @@ function closeModal() {
     document.getElementById('form_open').style.display = "none"
     location.reload();
 }
-
 
 
 
