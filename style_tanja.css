@@ -14,8 +14,8 @@
   border: 15px solid var(--clr-light);
   border-top-color: var(--clr-dark);
   border-top-style: groove;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   border-radius: 100%;
   position: absolute;
   top: 0;
