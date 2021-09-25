@@ -40,14 +40,12 @@ function showInfo() {
     }
 )
 
-    
-
     modal.style.display = "block";
-}
+};
 
 function createMenuItem(field) {
     let li = document.createElement('li');
-    li.classList.add("listItem_confirm");
+    li.classList.add("listItem");
     li.textContent = field;
     return li;
 }
