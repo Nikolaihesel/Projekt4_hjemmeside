@@ -1,4 +1,4 @@
-var acc = document.getElementsByClassName("arrow");
+var acc = document.getElementsByClassName("pos_arrow");
 var i;
 
 for (i = 0; i < acc.length; i++) {
