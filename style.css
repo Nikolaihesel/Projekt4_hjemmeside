@@ -556,3 +556,11 @@ main section {
         flex-direction: column;
     }
 }
+
+.listItem_confirm {
+    list-style: none;
+    font-size: var(--fs-h2);
+    font-family: var(--ff-prim);
+    color: var(--clr-dark);
+    padding: .5em;
+}

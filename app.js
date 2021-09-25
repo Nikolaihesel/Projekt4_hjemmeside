@@ -30,12 +30,12 @@ function showInfo() {
     let myDate = document.getElementById("dateInfo").value;
     let myEmail = document.getElementById("emailInfo").value;
     
-    this.contactInfo = [myName, myLastName, myDate, myEmail]
+    let contactInfo = [myName, myLastName, myDate, myEmail]
     
-    // get the ul#menu
+
     const menu = document.getElementById('menu');
     contactInfo.forEach((field)=> {
-        // add menu item
+
         menu.appendChild(createMenuItem(field));
     }
 )
@@ -45,7 +45,7 @@ function showInfo() {
 
 function createMenuItem(field) {
     let li = document.createElement('li');
-    li.classList.add("listItem");
+    li.classList.add("listItem_confirm");
     li.textContent = field;
     return li;
 }
