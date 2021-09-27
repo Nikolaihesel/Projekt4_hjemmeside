@@ -20,7 +20,7 @@ window.addEventListener("load", () => {
 
 
 function popUpText() {
-  let popUpInfo = ["Vidste du, at du kan få hjælp til at klare din hverdag som studerende og undgå unødvendig stress?", 'Book til til en studievejleder, stresscoach, psykoterapeup eller psykolog - det er helt gratis.']
+  let popUpInfo = ["Vidste du, at du kan få hjælp til at klare din hverdag som studerende og undgå unødvendig stress?", 'Book tid til en studievejleder, stresscoach, psykoterapeup eller psykolog - det er helt gratis.']
 
 
   const menu = document.getElementById('popup_text');
