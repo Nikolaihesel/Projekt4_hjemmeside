@@ -104,11 +104,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  display: block;
   transition: 0.5 ease;
   transition-property: visibility;
+  /* visibility: hidden; */
 }
 
+
+.container_laura {
+  display: none;
+}
 
 
 .popup-box_laura {
@@ -116,7 +120,7 @@
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   max-width: 350px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
