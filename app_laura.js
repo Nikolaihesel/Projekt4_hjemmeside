@@ -9,7 +9,7 @@ function toggleModal() {
       popup1.style.display = "block"
   }
  //array
-  let samarbejdeInfo = ['hej','hej']
+  let samarbejdeInfo = ['Samarbejde med os virker i virkeligheden','Vi er den tætte kobling til arbejdsmarkedet og dermed til virkeligheden. Vores forskning er anvendelsesorienteret, undervisningen er fokuseret om faktiske udfordringer og samtlige faglige områder drives i nært samarbejde med aftagere, samarbejdspartnere og måske dig?']
   // loop
 
   const menu = document.getElementById('txtInfoSam');
