@@ -1,12 +1,8 @@
-
-body {
-  background: #white;
-  font-family:"Raleway";
-}
+/* 
 .center {
   position:absolute;
   top: 50%;
-  left 50%;
+  left: 50%;
   transform:translate(-50%,-50%);
 }
 .popup {
@@ -32,7 +28,7 @@ body {
   transition: transform 300ms cubic-besier(0.18,0.89,0.43,1.19);
 }
 .popup .icon {
-  margin: 5px 0px
+  margin: 5px 0px;
   width: 50px;
   height: 50px;
   border: 2px solid #34f234;
@@ -50,7 +46,7 @@ body {
   font-size: 30px;
   font-weight: 600;
 }
-.popup . description {
+.popup .description {
   color: #222;
   font-size: 15px;
   padding: 5px;
@@ -93,4 +89,82 @@ body {
 }
 .popup.active .dismiss-btn {
   transition: all 300ms ease-in-out 400ms;
+}
+
+*/
+
+/* Popup screen */
+.popup-screen_laura {
+  z-index: 999999;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  transition: 0.5 ease;
+  transition-property: visibility;
+}
+
+
+
+.popup-box_laura {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rbg(0 0 0 / 20%);
+  transform: scale(0);
+  transition: 0.5s ease;
+  transition-property: transform;
+}
+
+
+
+.popup-box_laura h2 {
+  font-size: 2.1em;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.popup-box_laura p {
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+
+.btn-popup_laura {
+  color: #fff;
+  background: var(--clr-dark);
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 7px 27px;
+  border-radius: 3px;
+}
+
+.close-btn_laura {
+  position: absolute;
+  font-size: 1em;
+  top: 0;
+  right: 0;
+  margin: 15px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s ease;
+  transition-property: opacity;
+}
+
+.close-btn_laura:hover {
+  opacity: 1;
 }
