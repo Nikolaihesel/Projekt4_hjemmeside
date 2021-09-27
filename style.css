@@ -363,9 +363,6 @@ main section {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    /* display: none; */
-
-
 }
 
 .hide_book button {
@@ -379,11 +376,6 @@ main section {
     cursor: pointer;
 
 }
-
-.hide {
-    /* display: none; */
-}
-
 .line_book {
     margin: auto;
     width: 80%;
