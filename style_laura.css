@@ -1,12 +1,8 @@
 
-body {
-  background: #white;
-  font-family:"Raleway";
-}
 .center {
   position:absolute;
   top: 50%;
-  left 50%;
+  left: 50%;
   transform:translate(-50%,-50%);
 }
 .popup {
@@ -32,7 +28,7 @@ body {
   transition: transform 300ms cubic-besier(0.18,0.89,0.43,1.19);
 }
 .popup .icon {
-  margin: 5px 0px
+  margin: 5px 0px;
   width: 50px;
   height: 50px;
   border: 2px solid #34f234;
@@ -50,7 +46,7 @@ body {
   font-size: 30px;
   font-weight: 600;
 }
-.popup . description {
+.popup .description {
   color: #222;
   font-size: 15px;
   padding: 5px;
