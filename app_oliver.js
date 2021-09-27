@@ -1,30 +1,23 @@
-// Preload popupScreen
-window.onload = function(){
-  var container = document.getElementById('container_load-oliver');
-
-  container.style.visibility = 'hidden';
-  container.style.opacity = '0';
-}
 
 // Popup box
-const popupScreen = document.querySelector(".popup-screen-oliver");
-const popupBox = document.querySelector(".popup-box-oliver");
-const closeBtn = document.querySelector(".close-btn-oliver");
+const popupScreenOliver = document.querySelector(".popup-screen-oliver");
+const popupBoxOliver = document.querySelector(".popup-box-oliver");
+const closeBtnOliver = document.querySelector(".close-btn-oliver");
 
 window.addEventListener("load", () => {
   setTimeout(() => {
-    popupScreen.classList.add("active");
-  }, 10000); //Popup the screen in 10 seconds after the page is loaded
+    popupScreenOliver.classList.add("active");
+  }, 69000); //Popup the screen in 69 seconds after the page is loaded
 
-});
+})
 
 
 function popUpText() {
-  let popUpInfo = ["Vidste du, at du kan få hjælp til at klare din hverdag som studerende og undgå unødvendig stress?", 'Book tid til en studievejleder, stresscoach, psykoterapeup eller psykolog - det er helt gratis.']
+  let popUpInfoOliver = ["BATMAN", 'HEST']
 
 
   const menu = document.getElementById('popup_text-oliver');
-  popUpInfo.forEach((field)=> {
+  popUpInfoOliver.forEach((field)=> {
 
       menu.appendChild(createPopupItem(field));
   }
@@ -41,17 +34,17 @@ function createPopupItem(field) {
 
 popUpText();
 
-closeBtn.addEventListener("click", () => {
-  popupScreen.classList.remove("active"); //Close the popup screen on click the close button
+closeBtnOliver.addEventListener("click", () => {
+  popupScreenOliver.classList.remove("active"); //Close the popup screen on click the close button
 
   document.cookie = "WebsiteName=testWensite; max-age=" + 24 * 60 * 60;
 });
 
- const WebsiteCookie = document.cookie.indexOf("WebsiteName=");
+ const WebsiteCookieOliver = document.cookie.indexOf("WebsiteName=");
 
- if(WebsiteCookie != -1){
-   popupScreen.style.display = "none"; //Hide the popup screen if the cookie is not expired
+ if(WebsiteCookieOliver != -1){
+   popupScreenOliver.style.display = "none"; //Hide the popup screen if the cookie is not expired
  }
  else{
-   popupScreen.style.display = "flex"; //Show the popup screen if the cookie is expired
+   popupScreenOliver.style.display = "flex"; //Show the popup screen if the cookie is expired
  }
