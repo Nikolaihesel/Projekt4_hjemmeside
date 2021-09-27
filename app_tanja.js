@@ -15,28 +15,31 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     popupScreen.classList.add("active");
   }, 3000); //Popup the screen in 03 seconds after the page is loaded
-  
-  function popUpText() {
-      let popUp1 = document.getElementById("popup1");
-      let popUp2 = document.getElementById("popup2");
 
-      let popUpInfo = ['Vidste du, at du kan få hjælp til at klare din hverdag som studerende og undgå unødvendig stress?', 'Book til til en studievejleder, stresscoach, psykoterapeup eller psykolog - det er helt gratis.']
-
-
-      const menu = document.getElementById('popupinfo');
-      popUpInfo.forEach((field)=> {
-
-          popupinfo.appendChild(createPopupItem(field));
-      }
-  )
 });
+
+
+function popUpText() {
+  let popUpInfo = ["Vidste du, at du kan få hjælp til at klare din hverdag som studerende og undgå unødvendig stress?", 'Book til til en studievejleder, stresscoach, psykoterapeup eller psykolog - det er helt gratis.']
+
+
+  const menu = document.getElementById('popup_text');
+  popUpInfo.forEach((field)=> {
+
+      menu.appendChild(createPopupItem(field));
+  }
+)};
 
 function createPopupItem(field) {
     let p = document.createElement('p');
     p.classList.add("paragraph_popup");
     p.textContent = field;
     return p;
+
+
 }
+
+popUpText();
 
 closeBtn.addEventListener("click", () => {
   popupScreen.classList.remove("active"); //Close the popup screen on click the close button
@@ -44,11 +47,11 @@ closeBtn.addEventListener("click", () => {
   document.cookie = "WebsiteName=testWensite; max-age=" + 24 * 60 * 60;
 });
 
-const WebsiteCookie = document.cookie.indexOf("WebsiteName=");
+ const WebsiteCookie = document.cookie.indexOf("WebsiteName=");
 
-if(WebsiteCookie != -1){
-  popupScreen.style.display = "none"; //Hide the popup screen if the cookie is not expired
-}
-else{
-  popupScreen.style.display = "flex"; //Show the popup screen if the cookie is expired
-}
+ if(WebsiteCookie != -1){
+   popupScreen.style.display = "none"; //Hide the popup screen if the cookie is not expired
+ }
+ else{
+   popupScreen.style.display = "flex"; //Show the popup screen if the cookie is expired
+ }
