@@ -104,8 +104,7 @@ body {
 
 .menu_point li {
     list-style: none;
-    padding: 1em 0;
-    ;
+    padding: .5em 0;
 }
 
 .menu_point a {
@@ -233,6 +232,14 @@ main p {
 
 main section {
     margin: 2em 0;
+    }
+
+    section a {
+        font-size: var(--fs-system);
+        color: var(--clr-dark);
+        text-decoration: underline;
+        font-family: var(--ff-prim);
+
     }
 
  .book_tid {
