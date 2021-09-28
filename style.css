@@ -23,13 +23,15 @@ html {
 h1 {
     font-size: var(--fs-h1);
     font-family: var(--ff-prim);
-    color: var(--clr-dark)
+    color: var(--clr-dark);
+    line-height: 1.5;
 }
 
 h2 {
     font-size: var(--fs-h2);
     font-family: var(--ff-prim);
-    color: var(--clr-dark)
+    color: var(--clr-dark);
+    margin-bottom: -10px;
 }
 
 h3 {
@@ -43,6 +45,7 @@ p {
     font-size: var(--fs-p);
     font-family: var(--ff-prim);
     color: var(--clr-dark);
+    line-height: 1.5;
 }
 
 * {
@@ -254,7 +257,7 @@ main section {
     top: -5.5em;
 }
 
-  .tid {
+.tid {
     text-decoration: none;
   }
 
@@ -394,7 +397,7 @@ main section {
     width: 80%;
     border-radius: 10px;
     border: none;
-    height: 4px;
+    height: 2px;
     background: var(--clr-dark);
 }
 /* form */
