@@ -513,6 +513,10 @@ main section {
         padding-bottom: 3em;
     }
 
+    .stress_handling h1 {
+      font-size: 45px;
+    }
+
 
 
 }
